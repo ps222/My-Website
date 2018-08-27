@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Central HTML Template</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+	<!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/tooplate-style.css">
+	<!-- tooplate style -->
+
+	<script>
+		var renderPage = true;
+
+		if (navigator.userAgent.indexOf('MSIE') !== -1 ||
+			navigator.appVersion.indexOf('Trident/') > 0) {
+			/* Microsoft Internet Explorer detected in. */
+			alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+			renderPage = false;
+		}
+	</script>
+	<style>
+		.work {
+			font-family: "Times New Roman";
+			font-style: italic -webkit-align-self: center;
+			/* Safari 7.0+ */
+			align-self: center;
+			font-size: 222%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Loader -->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+	<div class="container">
+		<section class="tm-section-head" id="top">
+			<header id="header" class="text-center tm-text-gray">
+				<h1>Prince Spence</h1>
+				<p>Welcome To My Website</p>
+			</header>
+
+			<nav class="navbar narbar-light">
+				<a class="navbar-brand tm-text-gray" href="#">
+                    Menu
+                </a>
+				<button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon tm-fa-toggler-icon"></i>
+                    </span>
+                </button>
+				<div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link tm-text-gray" href="#top">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link tm-text-gray" href="index.html">Profile</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link tm-text-gray" href="centralcontact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="navbar navbar-default navbar-fixed-top">
+				<a href="/index.html" class="navbar-brand"></a>
+				<botton class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</botton>
+
+			</div>
+
+			<div class="collapse navbar-collapse" id="mydropdown">
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">info</a>
+					</li>
+					<li>
+						<a href="#">contact</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+
+		<div class="mapbox">
+			<i class="fas fa-map-marker-alt" id="mapcon"></i>
+			<a name="info"></a>
+			<div align="center" font-size:large;>
+				<div class="work">WORK HOURS & WORK SITE:
+				</div>
+
+				<br>
+				<br>
+				<div id="calendar">
+					<iframe src="https://calendar.google.com/calendar/embed?src=princespenceii%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div id="mapstyle">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2981.7102706470596!2d-74.0098334693161!3d40.65572037839378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1534795093719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div><br>
+				<div id="inquiry">
+					<a name="inquiry"></a>
+					<h3>LEAVE AN INQUIRY</h3><br>
+					<form>
+						<label><input type="text" name="fullname" placeholder="Name (Required)" required>
+					</label><br>
+						<label><input type="tel" name="phone" placeholder="Phone">
+					</label><br>
+						<label><input type="email" name="mail" placeholder="Email (Required)" required>
+					</label><br>
+						<br>
+						<textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Message" required></textarea><br><br>
+						<input type="submit" name="Submit" value="Submit">
+						<input type="reset" name="Reset">
+						<br>
+						<br>
+						<label>How did you hear about me?
+			<br>
+			<br>
+			<input type="radio" name="sites" value="li"> Linked In<br>
+			<input type="radio" name="sites" value="ref"> Referral<br>
+			<input type="radio" name="sites" value="other"> Other (Please specify below)<br>
+		
+		</label>
+						<textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Message" required></textarea><br>
+						<input type="submit" name="Submit" value="Submit">
+						<input type="reset" name="Reset">
+						<section class="tm-section-6" id="tm-section-6">
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-xs-12">
+									<div class="contact_message">
+<!--
+										<form action="" method="post" class="contact-form">
+											<div class="row mb-2">
+												<div class="form-group col-xl-6">
+
+												</div>
+
+											</div>
+-->
+									</div></div></div></section></form>
+
+											<footer class="foot">
+												<div class="footcons">
+													<p class="alignCenter pad30">
+														<a href="https://github.com/ps222" target="_blank"><i class="fab fa-github"></i></a>
+														<a href="https://twitter.com/PrinceSpence4" target="_blank"><i class="fab fa-twitter"></i></a>
+														<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+													</p>
+												</div>
+												<br style="clear:both;">
+												<div class="copyright">
+													<p>&copy; Copyright 2018 Prince Spence</p>
+												</div>
+												<a href="tel:1234567890">123.456.7890</a>
+											</footer>
+											<footer class="mt-5">
+												<p class="text-center">Copyright © 2018 Prince Spence
+													<a rel="nofollow" href="http://www.tooplate.com/view/2103-central" target="_parent" class="tm-text-black">(123)-456-7890</a>
+												</p>
+											</footer>
+
+											<!-- load JS files -->
+											<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+											<script src="js/popper.min.js"></script>
+											<!-- https://popper.js.org/ -->
+											<script src="js/bootstrap.min.js"></script>
+											<!-- https://getbootstrap.com/ -->
+											<script type="text/javascript" src="slick/slick.min.js"></script>
+											<!-- Slick Carousel -->
+
+											<script>
+												function setCarousel() {
+													var slider = $('.tm-img-slider');
+
+													if (slider.hasClass('slick-initialized')) {
+														slider.slick('destroy');
+													}
+
+													if ($(window).width() > 991) {
+														// Slick carousel
+														slider.slick({
+															autoplay: true,
+															fade: true,
+															speed: 800,
+															infinite: true,
+															slidesToShow: 1,
+															slidesToScroll: 1
+														});
+													} else {
+														slider.slick({
+															autoplay: true,
+															fade: true,
+															speed: 800,
+															infinite: true,
+															slidesToShow: 1,
+															slidesToScroll: 1
+														});
+													}
+												}
+
+												$(document).ready(function() {
+													if (renderPage) {
+														$('body').addClass('loaded');
+													}
+
+													setCarousel();
+
+													$(window).resize(function() {
+														setCarousel();
+													});
+
+													// Close menu after link click
+													$('.nav-link').click(function() {
+														$('#mainNav').removeClass('show');
+													});
+
+													// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+													// Select all links with hashes
+													$('a[href*="#"]')
+														// Remove links that don't actually link to anything
+														.not('[href="#"]')
+														.not('[href="#0"]')
+														.click(function(event) {
+															// On-page links
+															if (
+																location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+																location.hostname == this.hostname
+															) {
+																// Figure out element to scroll to
+																var target = $(this.hash);
+																target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+																// Does a scroll target exist?
+																if (target.length) {
+																	// Only prevent default if animation is actually gonna happen
+																	event.preventDefault();
+																	$('html, body').animate({
+																		scrollTop: target.offset().top + 1
+																	}, 1000, function() {
+																		// Callback after animation
+																		// Must change focus!
+																		var $target = $(target);
+																		$target.focus();
+																		if ($target.is(":focus")) { // Checking if the target was focused
+																			return false;
+																		} else {
+																			$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+																			$target.focus(); // Set focus again
+																		};
+																	});
+																}
+															}
+														});
+												});
+											</script>
+
+</body>
+
+</html>

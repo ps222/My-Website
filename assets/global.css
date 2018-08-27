@@ -1,0 +1,428 @@
+* {
+	font-family: 'Fira Sans', sans-serif;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #333333;
+	background-attachment: scroll;
+	background-size: 100%;
+	background-position: center center;
+	background-image: url(img/pic1.png);
+}
+
+p {
+	text-align: justify;
+	margin: 10px;
+	font-size: 1.5rem;
+	letter-spacing: 0.5px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-family:'Roboto', sans-serif;
+}
+
+hr {
+	border: 0.5px solid #444;
+	display: block;
+}
+
+
+/* NAVIGATION */
+
+header {
+	padding: 30px;
+	background-color: black;
+	border-bottom: 1px solid #1c1c1c;
+	text-align: center;
+}
+
+.nav .navlist {
+	list-style: none;
+}
+
+.nav .navlist > li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 60px;
+	position:relative;
+}
+
+.nav a {
+	color: #e15554;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.nav .navlist .sublist {
+	visibility: hidden;
+	list-style: none;
+	background-color: #0f0f0f;
+	border-radius: 5px;
+	border: 1px solid #191919;
+	position: absolute;
+	max-width: 140px;
+	z-index: 100;
+	right:20px;
+	opacity:0;
+	filter:alpha(opacity=0);
+    transition:200ms ease;
+}
+
+
+.nav .navlist li:hover .sublist {
+	visibility: visible;
+	opacity:1;
+    filter:alpha(opacity=100);
+}
+
+.nav .navlist li:hover .sublist li {
+	display: inline;
+}
+
+.nav .navlist li .sublist li a:hover {
+	color: #f7b267;
+}
+
+.dropbtn {
+	border: 1px solid #191919;
+}
+
+
+/*HEADINGS*/
+
+h1,
+h2,
+h3 {
+	font-family: 'Raleway', sans-serif;
+	color: #e15554;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 8rem;
+	padding: 40px 0px 0px 0px;
+}
+
+h2 {
+	font-size: 2.5rem;
+	letter-spacing: 3px;
+	padding: 0px 0px 60px;
+}
+
+h3 {
+	color: #e15554;
+	font-size: 4rem;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+}
+
+
+/* LANDING CONTAINER */
+
+.landing {
+	text-align: center;
+	padding: 0px 0px 70px;
+	background: linear-gradient(black, rgba(0, 0, 0, 0) 100%);
+	border-bottom: 1px solid #1c1c1c;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.landing > p {
+	text-align: center;
+	text-shadow: -4px 4px 3px rgba(0, 0, 0, .60);
+	padding: 20px;
+}
+
+#htmltext,
+#csstext,
+#jstext,
+#phptext,
+#resptext{
+	display:none;
+	font-size: 3rem;
+	color: #f7b267;
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+.fa-html5:hover ~ #htmltext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+.fa-css3-alt:hover ~ #csstext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+.fa-js-square:hover ~ #jstext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+
+.fa-php:hover ~ #phptext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+.icon-mobile-device:hover ~ #resptext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+
+.landing > a {
+	padding: 20px;
+}
+
+.landing > a:hover {
+	color: #f7b267;
+}
+
+
+/* ICONS */
+
+i {
+	font-size: 10rem;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	transform-origin: center;
+	margin: 0px 40px;
+}
+
+@keyframes iconflip {
+	0% {
+		transform: rotateX(0deg);
+	}
+	100% {
+		transform: rotateX(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+i:hover {
+	animation: iconflip 4s infinite;
+	color: #f7b267;
+	text-shadow: 0px 0px 15px rgba(244, 200, 66,.50);
+}
+
+.contactcons {
+	margin: 60px;
+}
+
+
+/*INFO SECTIONS*/
+
+section {
+	display: block;
+	padding: 10px;
+}
+
+.svg {
+	height: auto;
+	width: 225px;
+	float: left;
+	padding: 40px;
+	display: block;
+}
+
+.info {
+	text-align: center;
+}
+
+#middle {
+	display: block;
+	float: right;
+}
+
+.infocon {
+	width: auto;
+	padding: 20px;
+	margin: 50px 20% 100px;
+}
+
+.info > p {
+	padding: 0px 0px 20px;
+}
+
+
+/* MAP */
+
+#mapcon:hover {
+	animation: none;
+	color: white;
+	text-shadow:none;
+}
+
+.mapbox {
+	text-align: center;
+	margin: 100px 22%;
+}
+
+.mapbox p {
+	width: 190px;
+	height: 130px;
+	text-align: center;
+	margin: 50px auto;
+}
+
+.mapbox #inquiry h3 {
+	color: white;
+}
+
+#mapstyle {
+	box-shadow: -8px 7px 15px 0 rgba(0, 0, 0, 0.4);
+	border: 1px solid #e15554;
+}
+
+
+/* SITE BUTTONS */
+
+.button {
+	color: #e15554;
+	border: 3px solid #e15554;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 2.5rem;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 3px;
+	transition-duration: 0.5s
+}
+
+.btncon {
+	margin: 30px auto;
+}
+
+.button:hover {
+	color: white;
+	border-color: white;
+	box-shadow: 0px 0px 15px 1px #e15554;
+	text-decoration: underline;
+}
+
+
+/*Inquiry Form */
+
+#inquiry {
+	background-color: rgba(0, 0, 0, .45);
+	padding: 20px 80px;
+	border-radius: 10px;
+	margin: 40px 0px;
+}
+
+#inquiry h3 {
+	font-family: 'Raleway', sans-serif;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	color: #757575;
+	font-size: 1.5rem;
+}
+
+textarea {
+	height: 300px;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button] {
+	width: 20%;
+	padding: 12px 20px;
+	margin: 12px;
+	background-color: #1c1c1c;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: 0.5px solid #2d2d2d;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover {
+	transition: 0.4s;
+	box-shadow: 0px 0px 12px white;
+	height: auto;
+}
+
+textarea:focus,
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+	border-left: 3px solid #e15554;
+	outline: none;
+	transition: 0.4s;
+}
+
+
+/* FOOTER */
+
+footer {
+	border-top: 1px solid #1c1c1c;
+	text-align: center;
+	padding: 40px 0px;
+	margin: 70px 0px 0px 0px;
+	box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: #1c1c1c;
+	position:relative;
+	text-align: center;
+}
+
+.copyright{
+	display:inline-block;
+}
+
+.copyright p{
+		color: #444;
+}
+.footcons {
+	float:left;
+	position:absolute;
+	display:block;
+	top: 45px;
+	margin:0 0 0 70px;
+}
+
+.footcons i{
+	font-size: 3rem;
+	margin:0 30px;
+	color:#444;
+}
+.footcons i:hover{
+	text-shadow:none;
+	animation:none;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0px;}
+
+::-webkit-scrollbar-thumb{ background-color: #e15554;
+box-shadow:0 0 15px rgba(0,0,0,.5);}
+
+::-webkit-scrollbar-track{ background-color: rgba(0,0,0,.5); }
+
+::-webkit-scrollbar{ width: 3.5px;
+left:12px;}
